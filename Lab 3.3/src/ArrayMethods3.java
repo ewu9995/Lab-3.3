@@ -15,6 +15,7 @@ public class ArrayMethods3 {
 	{
 		int pivot = list1.length-1/2;
 		back = list1.length-1;
+		front =0;
 		for(int i = 1; i <list1.length; i++ ) {
 			
 		}
@@ -24,9 +25,11 @@ public class ArrayMethods3 {
 	
 	public static void quickSort(int[] list1, int front, int back)
 	{
-		
+		if(back>front) {
+			int pivotPos = partition(list1, front, back);
+			quickSort(list1, front, pivotPos-1);
+			quickSort(list, pivotPos+1, back)
+		}
 	}
 	
-	
-
 }

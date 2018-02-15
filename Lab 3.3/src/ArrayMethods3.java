@@ -7,7 +7,6 @@ public class ArrayMethods3 {
 			int[] list1 = {4,1,6,0,8,9,2,3,};
 			String[] list = {"ferwe","berwe", "aeeee"};
 			
-		
 			long start = System.nanoTime();
 			String[] mergeResult = mergeSort(list);
 			long end = System.nanoTime();

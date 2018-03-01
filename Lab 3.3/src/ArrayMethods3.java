@@ -50,6 +50,7 @@ public class ArrayMethods3 {
 			int x=0; //list1 indexes
 			int y=0; //list2 indexes
 			int z=0; //new array (combinedArray)
+			boolean a = false;
 			  while (x < list1.length && y < list2.length) //both arrays must be less than their intended length (any longer with break the code)
 		        {
 		            if (list1[x].compareTo(list2[y]) <= 0) //compares the values in the 2 arrays and see which is smaller
@@ -67,20 +68,22 @@ public class ArrayMethods3 {
 		            
 		        	}
 			  		
+			  	
 			  		//loops through the arrays to find values
-			  		if (x < list1.length)
+			  		while (x < list1.length)
 			  		{
 			  			combinedArray[z] = list1[x];
 			  			x++;
 			  			z++;
 			  		}
 
-			  		if (y < list2.length)
+			  		while (y < list2.length)
 			  		{
 			  			combinedArray[z] = list2[y];
 			  			y++; 
 			  			z++;
 			  		}
+			  	
 
 			    return combinedArray; //returns the merged sorted array 
 		}
